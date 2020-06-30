@@ -4692,7 +4692,7 @@
                         ],
                         "body": {
                           "mode": "raw",
-                          "raw": "{\n    \"type\": \"LDAP\",\n    \"id\": \"LDAP-ActiveDirectory\",\n    \"maskAttributeValues\": false,\n    \"hostnames\": [\n        \"{{adDcHost}}\"\n    ],\n    \"ldapType\": \"ACTIVE_DIRECTORY\",\n    \"bindAnonymously\": false,\n    \"userDN\": \"{{adServiceAccountDN}}\",\n    \"password\": \"{{adServicePwd}}\",\n    \"useSsl\": false,\n    \"useDnsSrvRecords\": false,\n    \"followLDAPReferrals\": false,\n    \"name\": \"AD\",\n    \"hostnamesTags\": [\n        {\n            \"hostnames\": [\n                \"{{adDcHost}}\"\n            ],\n            \"defaultSource\": true\n        }\n    ],\n    \"testOnBorrow\": false,\n    \"testOnReturn\": false,\n    \"createIfNecessary\": true,\n    \"verifyHost\": false,\n    \"minConnections\": 10,\n    \"maxConnections\": 100,\n    \"maxWait\": -1,\n    \"timeBetweenEvictions\": 60000,\n    \"readTimeout\": 3000,\n    \"connectionTimeout\": 3000,\n    \"binaryAttributes\": [\n        \"ms-ds-ConsistencyGUID\"\n    ],\n    \"dnsTtl\": 60000,\n    \"ldapDnsSrvPrefix\": \"_ldap._tcp\",\n    \"ldapsDnsSrvPrefix\": \"_ldaps._tcp\"\n}",
+                          "raw": "{\n    \"type\": \"LDAP\",\n    \"id\": \"LDAP-ActiveDirectory\",\n    \"maskAttributeValues\": false,\n    \"hostnames\": [\n        \"{{adDcHost}}\"\n    ],\n    \"ldapType\": \"ACTIVE_DIRECTORY\",\n    \"bindAnonymously\": false,\n    \"userDN\": \"{{adServiceAccountDN}}\",\n    \"password\": \"{{adServicePwd}}\",\n    \"useSsl\": true,\n    \"useDnsSrvRecords\": false,\n    \"followLDAPReferrals\": false,\n    \"name\": \"AD\",\n    \"hostnamesTags\": [\n        {\n            \"hostnames\": [\n                \"{{adDcHost}}\"\n            ],\n            \"defaultSource\": true\n        }\n    ],\n    \"testOnBorrow\": false,\n    \"testOnReturn\": false,\n    \"createIfNecessary\": true,\n    \"verifyHost\": false,\n    \"minConnections\": 10,\n    \"maxConnections\": 100,\n    \"maxWait\": -1,\n    \"timeBetweenEvictions\": 60000,\n    \"readTimeout\": 3000,\n    \"connectionTimeout\": 3000,\n    \"binaryAttributes\": [\n        \"ms-ds-ConsistencyGUID\"\n    ],\n    \"dnsTtl\": 60000,\n    \"ldapDnsSrvPrefix\": \"_ldap._tcp\",\n    \"ldapsDnsSrvPrefix\": \"_ldaps._tcp\"\n}",
                           "options": {
                             "raw": {}
                           }
@@ -8539,91 +8539,91 @@
   ],
   "variable": [
     {
-      "id": "75502bd4-d1f6-465b-ac69-bb3294cf4b58",
+      "id": "b103db9c-17f3-4ef7-a103-b02411c98124",
       "key": "pfAdminURL",
       "value": "https://pingfederate:9999",
       "type": "string"
     },
     {
-      "id": "ab1830fd-6d73-44cc-acca-b8fa63dfa57e",
+      "id": "74b91149-f07d-47e7-aade-db334e5e7f51",
       "key": "pdAdminUrl",
       "value": "https://pingdirectory:443",
       "type": "string"
     },
     {
-      "id": "2ad57176-9fff-41fc-95b0-852d764e0e84",
+      "id": "b1eba110-3da3-4f2c-9cae-6a71ae4f4598",
       "key": "pdsAdminURL",
       "value": "https://pingdatasync:443",
       "type": "string"
     },
     {
-      "id": "69dac47c-78dc-4c5f-b1dd-644207364921",
+      "id": "b914f977-a7b2-4243-8c9f-08404750eec6",
       "key": "pfAdmin",
       "value": "api-admin",
       "type": "string"
     },
     {
-      "id": "3742ff69-b2a1-4220-8405-6408554784be",
+      "id": "ac915d37-33c4-4343-8379-4ec5a1ba0ab9",
       "key": "pfAdminPwd",
       "value": "{{globalPwd}}",
       "type": "string"
     },
     {
-      "id": "783545b3-8d0f-4279-9e49-437d6455f70d",
+      "id": "0adda64d-ef80-4aa3-91f9-ce00e5e40cc6",
       "key": "pdAdmin",
       "value": "cn=administrator",
       "type": "string"
     },
     {
-      "id": "f0b65a4b-c273-4f85-a210-66bfffbe2504",
+      "id": "f060bdd3-0d14-4092-81fc-6f4df1942ef3",
       "key": "pdAdminPwd",
       "value": "{{globalPwd}}",
       "type": "string"
     },
     {
-      "id": "73dc2bcc-24a0-49a4-ae97-ec433303c495",
+      "id": "7fb39791-a23d-4139-99d6-b384a53c43ef",
       "key": "pdsAdmin",
       "value": "cn=administrator",
       "type": "string"
     },
     {
-      "id": "ba07b992-a4d1-4e4d-8888-bc4d7c9b32f7",
+      "id": "9d8b6fa0-be4d-4ac5-81da-2b3b8f18842c",
       "key": "pdsAdminPwd",
       "value": "{{globalPwd}}",
       "type": "string"
     },
     {
-      "id": "d50a0fb9-df1d-4afa-8e72-ba05788f2858",
+      "id": "c24c5d25-db36-4c73-8657-497d1e91c93c",
       "key": "globalPwd",
       "value": "2FederateM0re",
       "type": "string"
     },
     {
-      "id": "e3eeb971-966e-40dd-bddb-9f0ac8d968b5",
+      "id": "d430894b-4357-4c27-b6a9-edd05d74261c",
       "key": "adServiceAccount",
       "value": "pingfederate",
       "type": "string"
     },
     {
-      "id": "98b0fefe-ab59-403f-aed2-fb728ffaa6b4",
+      "id": "cbd95124-45df-4078-a844-3446507f54c0",
       "key": "adServicePwd",
       "value": "P@ssword99",
       "type": "string"
     },
     {
-      "id": "9e1e3107-ea60-40e1-8561-4b3a400e6282",
+      "id": "4e3c2f1f-a156-4459-b80e-d20589b6832a",
       "key": "adUserContainer",
       "value": "cn=Users",
       "type": "string"
     },
     {
-      "id": "ffa7be21-2e40-41d5-ae11-4ecddb69bb87",
+      "id": "14a370af-f401-48c6-812c-bde030b58811",
       "key": "adGroupContainer",
       "value": "ou=Groups",
       "type": "string"
     },
     {
-      "id": "89241e47-ebd1-4564-9015-06ac5232eed5",
+      "id": "38a1f1cc-99f8-4fe1-b185-362126197c4f",
       "key": "oauthSecret",
       "value": "{{globalPwd}}",
       "type": "string"
